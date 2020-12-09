@@ -14,12 +14,12 @@
       <!-- intestazione -->
       <header id="header" >
         <!-- nav con social e opzioni account -->
-        <nav class="social-account">
+        <nav class="social-account padding">
           <div class="social">
-            <i v-for="icon in socials" :class="icon"></i>
+            <a v-for="icon in socials" :href="icon.link"> <i :class="icon.social"> </i></a>
           </div>
           <div class="account">
-
+            <a v-for="item in profilo" href=""> <i :class="item.cart"></i> {{item.str}} <i :class="item.dropdown"></i> </a>
           </div>
         </nav>
       </header>

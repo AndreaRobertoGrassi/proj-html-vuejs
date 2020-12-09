@@ -4,18 +4,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
+.padding{
+  padding: 0 300px;
+}
+/* HEADER */
 #header{
   display: flex;
   justify-content: space-between;
-  padding: 0 300px;
 }
 #header .social-account{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
+  height: 40px;
+  border-bottom: 1px solid grey;
+  position: fixed;
+  z-index: 1;
 }
 #header .social{
   display: flex;
   justify-content: space-between;
   width: 100px;
+}
+#header .account{
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
 }
