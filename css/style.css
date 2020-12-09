@@ -21,6 +21,24 @@ a{
   align-items: center;
   width: 100%;
 }
+.view-button{
+  background-color: inherit;
+  margin: 20px 5px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 12px;
+  color: white;
+}
+.linea{
+  height: 1px;
+  flex-grow: 1;
+  background-color: grey;
+}
+.spazio-sezione{
+  margin-bottom: 50px;
+}
 /* HEADER */
 #header{
   display: flex;
@@ -69,7 +87,6 @@ main{
   background-size: cover;
   background-position: center;
   position: relative;
-  margin-bottom: 50px;
 }
 #jumbotron .text-jumbo{
   position: absolute;
@@ -86,22 +103,9 @@ main{
 #jumbotron .text-jumbo .sottotitolo{
   font-size: 20px;
 }
-#jumbotron .text-jumbo button {
-  background-color: inherit;
-  margin: 20px 5px;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 10px 20px;
-  border: 2px solid white;
-  border-radius: 15px;
-  color: white;
-}
 
 /* featured-products */
-#featured-products .titolo .linea{
-  height: 1px;
-  flex-grow: 1;
-  background-color: grey;
+#featured-products h1{
   margin: 0 20px;
 }
 #featured-products p{
@@ -129,4 +133,48 @@ main{
 #featured-products .prezzo span{
   text-decoration: line-through;
   margin-right: 10px;
+}
+
+/* collection */
+#season-collection .immagine{
+  height: 500px;
+  width: calc(100% / 3);
+  background-image: url('../img/winter.jpg');
+  background-size: cover;
+  position: relative;
+}
+#season-collection .winter{
+  background-image: url('../img/winter.jpg');
+}
+#season-collection .spring{
+  background-image: url('../img/spring.jpg');
+}
+#season-collection .autumn{
+  background-image: url('../img/autumn.jpg');
+}
+#season-collection .text h1{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+#season-collection .text{
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+}
+
+/* best seller */
+#best-seller h1{
+  margin: 0 20px;
+}
+#best-seller p{
+  text-align: center;
+}
+
+/* discount */
+#discount{
+  height: 400px;
+  background-image: url('../img/bg-confetti.jpg');
 }
