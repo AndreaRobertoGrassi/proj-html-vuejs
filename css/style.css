@@ -11,19 +11,27 @@ a{
 .padding{
   padding: 0 250px;
 }
-.flex{
+.flex-between{
   display: flex;
   justify-content: space-between;
+}
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 /* HEADER */
 #header{
   display: flex;
   justify-content: space-between;
+
 }
 #header nav{
   width: 100%;
   position: fixed;
   z-index: 1;
+  background-color: white;
 }
 /* social-account */
 #header .social-account{
@@ -46,4 +54,79 @@ a{
 }
 #header .navbar{
   width: 70%;
+}
+/* MAIN */
+main{
+  margin-top: 140px;
+  height: 3000px;
+}
+
+/* jumbotron */
+#jumbotron{
+  width: 100%;
+  height: 550px;
+  background-image: url('../img/jumbo.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+#jumbotron .text-jumbo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: white;
+}
+#jumbotron .text-jumbo h1{
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+#jumbotron .text-jumbo .sottotitolo{
+  font-size: 20px;
+}
+#jumbotron .text-jumbo button {
+  background-color: inherit;
+  margin: 20px 5px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 15px;
+  color: white;
+}
+
+/* featured-products */
+#featured-products .titolo .linea{
+  height: 1px;
+  flex-grow: 1;
+  background-color: grey;
+  margin: 0 20px;
+}
+#featured-products p{
+  text-align: center;
+}
+#featured-products .menu{
+  margin: 30px 0;
+}
+#featured-products .menu .text{
+  padding: 10px 25px;
+  border: 1px solid grey;
+}
+.active{
+  background-color: lightgrey;
+}
+#featured-products .img{
+  margin: 0 20px;
+}
+#featured-products .img *{
+  margin-bottom: 10px;
+}
+#featured-products .prezzo{
+  color: blue;
+}
+#featured-products .prezzo span{
+  text-decoration: line-through;
+  margin-right: 10px;
 }

@@ -16,19 +16,19 @@
         <!-- navbar -->
         <nav>
           <!-- social e opzioni account -->
-          <div class="social-account padding flex">
-            <div class="social flex">
+          <div class="social-account padding flex-between">
+            <div class="social flex-between">
               <a v-for="icon in socials" :href="icon.link"> <i :class="icon.social"> </i></a>
             </div>
-            <div class="account flex">
+            <div class="account flex-between">
               <a v-for="item in profilo" href=""> <i :class="item.cart"></i> {{item.str}} <i :class="item.dropdown"></i> </a>
             </div>
           </div>
 
           <!-- navigazione -->
-          <div class="navigazione padding flex">
+          <div class="navigazione padding flex-between">
             <img :src="logo" alt="">
-            <div class="navbar flex">
+            <div class="navbar flex-between">
               <a v-for="item in menu" href="">{{item.str}}<i :class="item.dropdown"></i> </a>
               <button type="button" class=""> <a href="#">{{button}}</a> </button>
               <i :class="search"></i>
@@ -42,12 +42,56 @@
       <main>
         <!-- jumbotron -->
         <section id="jumbotron">
-          
+          <div class="text-jumbo">
+            <h1>Brand New Arrivals</h1>
+            <div class="sottotitolo">NEW COLLECTION FROM NEW YORK</div>
+            <button type="button" name="button">VIEW ALL</button>
+            <button type="button" name="button">LOOKBOOK</button>
+          </div>
         </section>
 
         <!-- featured products -->
-        <section id="featured-products">
+        <section id="featured-products" class="padding">
+          <div class="titolo flex-center">
+            <div class="linea"></div>
+            <h1>Featured Products</h1>
+            <div class="linea"></div>
+          </div>
 
+          <p>Must have products from our top seller</p>
+
+          <div class="menu flex-center">
+            <div class="text">Men</div>
+            <div class="text active">Women</div>
+            <div class="text active">Accesories</div>
+          </div>
+
+          <div class="immagini flex-center">
+            <div class="img">
+              <img src="img/men1.jpg" alt="">
+              <h4>Black Leather Jacket</h4>
+              <div class="descrizione">Man, Jacket, Jeans</div>
+              <div class="prezzo"> <span>$235</span>$200</div>
+            </div>
+            <div class="img">
+              <img src="img/men2.jpg" alt="">
+              <h4>Black Leather Suit</h4>
+              <div class="descrizione">Man,Jacket</div>
+              <div class="prezzo">$176</div>
+            </div>
+            <div class="img">
+              <img src="img/men3.jpg" alt="">
+              <h4>Black Jacket &amp; Streep Tee</h4>
+              <div class="descrizione">Man, Jacket, Suits</div>
+              <div class="prezzo">$580</div>
+            </div>
+            <div class="img">
+              <img src="img/men4.jpg" alt="">
+              <h4>Modern Black Leather Suit</h4>
+              <div class="descrizione">Man,Jacket</div>
+              <div class="prezzo">$96</div>
+            </div>
+          </div>
         </section>
 
         <!-- season collection -->
