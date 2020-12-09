@@ -13,14 +13,28 @@
 
       <!-- intestazione -->
       <header id="header" >
-        <!-- nav con social e opzioni account -->
-        <nav class="social-account padding">
-          <div class="social">
-            <a v-for="icon in socials" :href="icon.link"> <i :class="icon.social"> </i></a>
+        <!-- navbar -->
+        <nav>
+          <!-- social e opzioni account -->
+          <div class="social-account padding flex">
+            <div class="social flex">
+              <a v-for="icon in socials" :href="icon.link"> <i :class="icon.social"> </i></a>
+            </div>
+            <div class="account flex">
+              <a v-for="item in profilo" href=""> <i :class="item.cart"></i> {{item.str}} <i :class="item.dropdown"></i> </a>
+            </div>
           </div>
-          <div class="account">
-            <a v-for="item in profilo" href=""> <i :class="item.cart"></i> {{item.str}} <i :class="item.dropdown"></i> </a>
+
+          <!-- navigazione -->
+          <div class="navigazione padding flex">
+            <img :src="logo" alt="">
+            <div class="navbar flex">
+              <a v-for="item in menu" href="">{{item.str}}<i :class="item.dropdown"></i> </a>
+              <button type="button" class=""> <a href="#">{{button}}</a> </button>
+              <i :class="search"></i>
+            </div>
           </div>
+
         </nav>
       </header>
 
@@ -28,7 +42,7 @@
       <main>
         <!-- jumbotron -->
         <section id="jumbotron">
-
+          
         </section>
 
         <!-- featured products -->
