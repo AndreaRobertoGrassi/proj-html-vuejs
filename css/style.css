@@ -1,0 +1,21 @@
+/* REGOLE GENERALI */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#header{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 300px;
+}
+#header .social-account{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#header .social{
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
