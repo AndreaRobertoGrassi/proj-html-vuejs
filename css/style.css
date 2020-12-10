@@ -139,7 +139,6 @@ main{
 #season-collection .immagine{
   height: 500px;
   width: calc(100% / 3);
-  background-image: url('../img/winter.jpg');
   background-size: cover;
   position: relative;
 }
@@ -177,4 +176,41 @@ main{
 #discount{
   height: 400px;
   background-image: url('../img/bg-confetti.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#discount .immagine{
+  height: 300px;
+  width: 450px;
+  background-size: cover;
+  position: relative;
+  margin: 0 30px;
+}
+#discount .bg-box-1{
+  background-image: url('../img/bg-box-1.jpg');
+}
+#discount .bg-box-2{
+  background-image: url('../img/bg-box-2.jpg');
+}
+#discount .text h1{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+#discount .text{
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  color: white;
+}
+/* new arrivals */
+#new-arrivals h1{
+  margin: 0 20px;
+}
+#new-arrivals p{
+  text-align: center;
+}
+#new-arrivals .immagini img{
+  width: 295px;
+  height: 390px;
 }
