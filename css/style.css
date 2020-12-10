@@ -14,11 +14,13 @@ a{
 .flex-between{
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .flex-center{
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
 }
 .view-button{
@@ -39,12 +41,15 @@ a{
 .spazio-sezione{
   margin-bottom: 50px;
 }
-/* HEADER */
-#header{
-  display: flex;
-  justify-content: space-between;
-
+p{
+  text-align: center;
+  margin: 10px 0 30px ;
 }
+.margin-h1{
+  margin: 0 20px;
+}
+/* HEADER */
+
 #header nav{
   width: 100%;
   position: fixed;
@@ -105,15 +110,7 @@ main{
 }
 
 /* featured-products */
-#featured-products h1{
-  margin: 0 20px;
-}
-#featured-products p{
-  text-align: center;
-}
-#featured-products .menu{
-  margin: 30px 0;
-}
+
 #featured-products .menu .text{
   padding: 10px 25px;
   border: 1px solid grey;
@@ -122,7 +119,7 @@ main{
   background-color: lightgrey;
 }
 #featured-products .img{
-  margin: 0 20px;
+  margin:20px;
 }
 #featured-products .img *{
   margin-bottom: 10px;
@@ -164,14 +161,6 @@ main{
   color: white;
 }
 
-/* best seller */
-#best-seller h1{
-  margin: 0 20px;
-}
-#best-seller p{
-  text-align: center;
-}
-
 /* discount */
 #discount{
   height: 400px;
@@ -204,15 +193,9 @@ main{
   color: white;
 }
 /* new arrivals */
-#new-arrivals h1{
-  margin: 0 20px;
-}
-#new-arrivals p{
-  text-align: center;
-}
 #new-arrivals .immagini img{
   width: 295px;
-  height: 390px;
+  height: auto;
 }
 /* theme-fusion */
 #theme-fusion{
@@ -243,6 +226,33 @@ main{
   margin-bottom: 20px;
 }
 
+/* blog */
+#blog .immagini p{
+  text-align: left;
+}
+#blog .img{
+  width: 320px;
+}
 
+/* linea divisoria */
+.divisoria{
+  margin: 40px 20px;
+}
 
+/* articoli */
+#articoli .width{
+  width: 200px;
+}
+#articoli .img-text{
+  padding: 15px 0 10px;
+  border-bottom: 1px solid lightgrey;
+}
+#articoli .img-text img{
+  width: 80px;
+  height: auto;
+}
+#articoli .descrizione{
+  margin-top: 10px;
+  font-size: 12px;
+}
 
