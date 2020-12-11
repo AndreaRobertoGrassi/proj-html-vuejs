@@ -4,9 +4,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
 a{
   text-decoration: none;
-  color: black;
 }
 .padding{
   padding: 0 250px;
@@ -29,19 +32,20 @@ a{
   width: 100%;
 }
 button{
-  background-color: inherit;
+  background-color: rgba(125, 125, 125, 0.5);
   margin: 20px 5px;
   font-size: 15px;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 15px 30px;
   border: 2px solid white;
-  border-radius: 12px;
+  border-radius: 25px;
   color: white;
+  cursor: pointer;
 }
 .linea{
   height: 1px;
   flex-grow: 1;
-  background-color: grey;
+  background-color: #525558;
 }
 .spazio-sezione{
   margin-bottom: 50px;
@@ -49,13 +53,14 @@ button{
 p{
   text-align: center;
   margin: 10px 0 30px ;
+  color: #525558;
+  font-size: 14px;
 }
 .margin-h1{
   margin: 0 20px;
 }
 
 /* HEADER */
-
 #header nav{
   width: 100%;
   position: fixed;
@@ -66,23 +71,45 @@ p{
 #header .social-account{
   align-items: center;
   width: 100%;
-  height: 40px;
-  border-bottom: 1px solid grey;
+  height: 50px;
+  border-bottom: 1px solid #dddfdf;
 }
 #header .social{
   width: 100px;
 }
+#header .social a i{
+  color: #64686c;
+}
 #header .account{
   width: 350px;
+}
+#header .account .cart{
+  background-color: #ebecec;
+  padding: 16px;
 }
 /* navigazione */
 #header .navigazione{
   height: 100px;
   align-items: center;
-  border-bottom: 1px solid grey;
 }
 #header .navbar{
   width: 70%;
+}
+#header a,.dropdown{
+  color:#64686c;
+}
+#header .menu a{
+  margin:0 5px;
+}
+#header .navbar .menu:first-child a, #header .navbar .menu:first-child i{
+  color: #427ed5;
+}
+#header .shop-now{
+  background-color: #427ed5;
+  padding: 10px 20px;
+}
+#header .ricerca{
+  color:#64686c;
 }
 /* MAIN */
 main{
@@ -114,22 +141,28 @@ main{
 }
 
 /* featured-products */
-
 #featured-products .menu .text{
   padding: 10px 25px;
+  font-weight: bold;
   border: 1px solid grey;
 }
-.active{
-  background-color: lightgrey;
+#featured-products .active{
+  background-color: #ebecec;
+}
+#featured-products .menu .text:hover{
+  background-color: #ebecec;
+  cursor: pointer;
 }
 #featured-products .img{
   margin:20px;
+  text-align: left;
 }
 #featured-products .img *{
   margin-bottom: 10px;
 }
 #featured-products .prezzo{
-  color: blue;
+  font-size: 18px;
+  color: #427ed5;
 }
 #featured-products .prezzo span{
   text-decoration: line-through;
@@ -164,7 +197,13 @@ main{
   text-align: center;
   color: white;
 }
-
+/* best seller */
+#best-seller i{
+  background-color: rgb(184, 180, 180);
+  padding: 20px 10px;
+  color: white;
+  cursor: pointer;
+}
 /* discount */
 #discount{
   height: 400px;
@@ -185,21 +224,50 @@ main{
 #discount .bg-box-2{
   background-image: url('../img/bg-box-2.jpg');
 }
-#discount .text h1{
-  font-size: 30px;
-  margin-bottom: 20px;
-}
 #discount .text{
   position: absolute;
   top: 50%;
-  left: 30px;
+  left: 40px;
   transform: translateY(-50%);
   color: white;
+  text-align: left;
 }
+#discount .text h1{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+#discount .text p{
+  color: white;
+  text-align: left;
+  margin-bottom: 20px;
+}
+#discount button{
+  padding: 10px 25px;
+  margin: 20px 0;
+}
+
 /* new arrivals */
 #new-arrivals .immagini img{
   width: 295px;
   height: auto;
+}
+#new-arrivals .immagini{
+  position: relative;
+}
+#new-arrivals i{
+  background-color: rgb(184, 180, 180);
+  padding: 20px 10px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#new-arrivals .left{
+   left:15px;
+}
+#new-arrivals .right{
+  right:15px;
 }
 /* theme-fusion */
 #theme-fusion{
@@ -229,6 +297,9 @@ main{
 #theme-fusion .man *{
   margin-bottom: 20px;
 }
+#theme-fusion p{
+  color: white;
+}
 
 /* blog */
 #blog .immagini p{
@@ -237,18 +308,26 @@ main{
 #blog .img{
   width: 320px;
 }
-
+#blog .data{
+  color: #525558;
+  font-size: 13px;
+  margin-top: 5px;
+}
 /* linea divisoria */
 .divisoria{
   margin: 40px 20px;
 }
 
 /* articoli */
+#articoli{
+  color:#525558;
+}
 #articoli .width{
-  width: 200px;
+  width: 240px;
 }
 #articoli .img-text{
-  padding: 15px 0 10px;
+  margin-top: 20px;
+  padding-bottom:10px;
   border-bottom: 1px solid lightgrey;
 }
 #articoli .img-text img{
@@ -256,31 +335,54 @@ main{
   height: auto;
 }
 #articoli .descrizione{
-  margin-top: 10px;
+  align-self: flex-start;
   font-size: 12px;
+}
+#articoli .descrizione *{
+  margin-bottom: 8px;
+}
+#articoli .text{
+  margin-right: 5px;
+}
+#articoli i{
+  color: #427ed5;
+}
+#articoli .prezzo, #articoli .scontato, #articoli .underline{
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+#articoli .scontato{
+  text-decoration: line-through;
+}
+#articoli .underline{
+  text-decoration: underline;
 }
 /* loghi */
 #loghi{
-  background-color: lightgrey;
+  background-color: #ebecec;
   height: 300px;
   flex-direction: column;
 }
 #loghi .titolo{
   text-align: center;
   margin-bottom: 30px;
+  color: #525558;
 }
 
 /* subscribe */
 #subscribe{
   height: 200px;
-  background-color: grey;
+  background-color: #2f3034;
+  color: white;
 }
 #subscribe i{
-  font-size: 25px;
-  background-color: red;
-  padding: 10px;
+  font-size: 30px;
+  background-color: #1c1b1b;
+  padding: 15px;
   border-radius: 50%;
   margin-right: 20px;
+  color: #909696;
 }
 #subscribe input{
   width: 300px;
@@ -289,6 +391,11 @@ main{
   border-radius: 10px;
   border: none;
   margin-right: 20px;
+}
+#subscribe button{
+  background-color: #427ed5;
+  border: 0;
+  padding: 8px 30px;
 }
 
 /* FOOTER */
@@ -305,8 +412,10 @@ main{
 /* sezione avada-classic-shop */
 #footer .avada-classic-shop{
   display: flex;
-  background-color: black;
+  background-color: #2a2f33;
   padding: 50px 250px;
+  color:#c6cdcd;
+  font-size: 12px;
 }
 /* 1colonna */
 #footer .colonna-1 .logo-footer{
@@ -318,6 +427,7 @@ main{
 }
 #footer .colonna-1 i{
   color: white;
+  font-size: 14px;
 }
 #footer .colonna-1 .info{
   margin: 50px 0;
@@ -335,11 +445,11 @@ main{
 /* colonna 2 */
 #footer .colonna-2{
   width: 220px;
-  margin-left: 60px;
+  margin-left: 150px;
 }
 #footer .colonna-2 .products{
   padding: 10px 0;
-  border-bottom: 1px solid grey;
+  border-bottom: 0.5px solid #494b4b;
   margin-bottom: 8px;
 }
 #footer .colonna-2 img{
@@ -349,14 +459,19 @@ main{
 #footer .colonna-2 .text *{
   margin: 5px 0;
 }
-
+#footer .colonna-2 .stelle{
+  color: #427ed5;
+}
 /* colonna 3 */
 #footer .colonna-3{
   height: 100%;
   margin-left: 30px;
 }
+#footer .colonna-3 h4{
+  margin-bottom: 35px;
+}
 #footer .colonna-3 .testo{
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #494b4b;
   padding-bottom: 18px;
   margin-bottom: 18px;
 }
@@ -365,22 +480,30 @@ main{
   margin-left: 30px;
 }
 #footer .colonna-4 h4{
-  margin-bottom: 50px;
+  margin-bottom: 44px;
 }
 #footer .colonna-4 .tag{
-  margin-bottom:25px;
+  margin-bottom:17px;
 }
 #footer .colonna-4 .tag a{
-  border: 1px solid grey;
+  border: 1px solid #494b4b;
   margin-right: 5px;
-  padding: 8px;
+  padding: 6px;
+  color:#c6cdcd;
+  font-size: 12px;
 }
 /* sezione copyright */
 #footer .copyright{
-  height: 100px;
-  background-color: grey;
+  height: 150px;
+  background-color: #1c1e21;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+}
+#footer .copyright div{
+  margin-bottom: 20px;
+}
+#footer .copyright a{
+  color: #c6cdcd;
 }

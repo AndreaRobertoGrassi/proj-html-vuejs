@@ -86,7 +86,7 @@ var footer = new Vue({
           "fas fa-star",
         ],
         price: "$45",
-        articolo: "img/articoli-5.jpg",
+        articolo: "img/articoli-2.jpg",
       },
 
       {
@@ -99,7 +99,7 @@ var footer = new Vue({
           "fas fa-star",
         ],
         price: "$45",
-        articolo: "img/articoli-5.jpg",
+        articolo: "img/articoli-7.jpg",
       },
     ],
 
