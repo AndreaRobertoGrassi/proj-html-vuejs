@@ -39,6 +39,7 @@ var footer = new Vue({
   // per il footer
   el: "#footer",
   data: {
+    // sezione avada classic shop
     prima_col: {
       logo: "img/logo_footer.png",
       info: [
@@ -104,16 +105,22 @@ var footer = new Vue({
 
     terza_col: [
       "RECENT POST",
-      {arrow: "fas fa-angle-right",str: "Anean lobortis sapien enim viverra"},
+      {
+        arrow: "fas fa-angle-right",
+        str: "Anean lobortis sapien enim viverra",
+      },
       { arrow: "fas fa-angle-right", str: "Duis ac massa semper maximus" },
-      {arrow: "fas fa-angle-right",str: "Nunc fermint nulla eu justo sem id"},
+      {
+        arrow: "fas fa-angle-right",
+        str: "Nunc fermint nulla eu justo sem id",
+      },
       { arrow: "fas fa-angle-right", str: "Aliquam posuere magna eget nibh" },
       { arrow: "fas fa-angle-right", str: "Cras ac nulla ac consecte rutrum" },
       { arrow: "fas fa-angle-right", str: "Fusce mattis nunc ut aliquam" },
     ],
 
     quarta_col: [
-      'TAGS',
+      "TAGS",
       ["Black", "boots", "Brown", "Casual"],
       ["D&G", "Fabric", "flowers", "Grey"],
       ["hat", "Hipster", "lines"],
@@ -122,6 +129,15 @@ var footer = new Vue({
       ["summer", "sweater", "Travel"],
       ["Warm", "White", "winter"],
     ],
-  },
+
+    // sezione copyright
+    copy: [
+      "",
+      " Avada Theme by Theme Fusion |",
+      " All Rights Ressrved |",
+      " Powered by Wordrepss",
+    ],
+    pagamenti: "img/pagamenti.png",
+  }
 });
  

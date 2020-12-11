@@ -459,7 +459,11 @@
 
 
         <section class="copyright">
-
+          <div>
+            <a v-for="(item,i) in copy" v-html="i==0?'&copy; copyright 2012-2020 |':item" href=""></a>
+          </div>
+          <img :src="pagamenti" alt="">
+          
         </section>
       </footer>
 

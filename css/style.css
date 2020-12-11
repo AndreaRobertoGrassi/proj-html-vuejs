@@ -340,7 +340,7 @@ main{
 #footer .colonna-2 .products{
   padding: 10px 0;
   border-bottom: 1px solid grey;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 #footer .colonna-2 img{
   width: 60px;
@@ -357,8 +357,8 @@ main{
 }
 #footer .colonna-3 .testo{
   border-bottom: 1px solid grey;
-  padding-bottom: 20px;
-  margin-bottom: 23px;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
 }
 /* colonna 4 */
 #footer .colonna-4{
@@ -377,6 +377,10 @@ main{
 }
 /* sezione copyright */
 #footer .copyright{
-  height: 200px;
+  height: 100px;
   background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
