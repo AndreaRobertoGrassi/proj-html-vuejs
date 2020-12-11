@@ -87,9 +87,7 @@ p{
 /* MAIN */
 main{
   padding-top: 140px;
-  margin-bottom: 100px;
 }
-
 /* jumbotron */
 #jumbotron{
   width: 100%;
@@ -212,7 +210,7 @@ main{
   height: 150px;
   background-image: url('../img/bg-testimonial.jpg');
   background-position: center;
-  
+
 }
 #theme-fusion .second-bg{
   height: 300px;
@@ -274,7 +272,7 @@ main{
 
 /* subscribe */
 #subscribe{
-  height: 300px;
+  height: 200px;
   background-color: grey;
 }
 #subscribe i{
@@ -291,4 +289,94 @@ main{
   border-radius: 10px;
   border: none;
   margin-right: 20px;
+}
+
+/* FOOTER */
+#footer{
+  color: white;
+}
+#footer a{
+  color: white;
+}
+#footer h4{
+  margin-bottom: 25px;
+}
+
+/* sezione avada-classic-shop */
+#footer .avada-classic-shop{
+  display: flex;
+  background-color: black;
+  padding: 50px 250px;
+}
+/* 1colonna */
+#footer .colonna-1 .logo-footer{
+  width: 150px;
+  height: auto;
+}
+#footer .colonna-1 .social{
+  width: 100px;
+}
+#footer .colonna-1 i{
+  color: white;
+}
+#footer .colonna-1 .info{
+  margin: 50px 0;
+}
+#footer .colonna-1 .info div{
+  margin: 10px 0;
+}
+
+/* left */
+#footer .left{
+  display: flex;
+  width: 100%;
+}
+
+/* colonna 2 */
+#footer .colonna-2{
+  width: 220px;
+  margin-left: 60px;
+}
+#footer .colonna-2 .products{
+  padding: 10px 0;
+  border-bottom: 1px solid grey;
+  margin-bottom: 20px;
+}
+#footer .colonna-2 img{
+  width: 60px;
+  height: auto;
+}
+#footer .colonna-2 .text *{
+  margin: 5px 0;
+}
+
+/* colonna 3 */
+#footer .colonna-3{
+  height: 100%;
+  margin-left: 30px;
+}
+#footer .colonna-3 .testo{
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px;
+  margin-bottom: 23px;
+}
+/* colonna 4 */
+#footer .colonna-4{
+  margin-left: 30px;
+}
+#footer .colonna-4 h4{
+  margin-bottom: 50px;
+}
+#footer .colonna-4 .tag{
+  margin-bottom:25px;
+}
+#footer .colonna-4 .tag a{
+  border: 1px solid grey;
+  margin-right: 5px;
+  padding: 8px;
+}
+/* sezione copyright */
+#footer .copyright{
+  height: 200px;
+  background-color: grey;
 }

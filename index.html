@@ -401,9 +401,65 @@
 
       <!-- footer -->
       <footer id="footer">
-        <section id="avada-classic-shop">
+        <section class="avada-classic-shop">
+
+          <div class="colonna-1">
+            <img class="logo-footer" :src="prima_col.logo" alt="">
+            <div class="info">
+              <div v-for="item in prima_col.info">{{item}}</div>
+            </div>
+            <div class="social flex-between">
+              <a v-for="icon in prima_col.socials" :href="icon.link"> <i :class="icon.social"> </i></a>
+            </div>
+          </div>
+
+          <div class="left">
+            
+            <div class="colonna-2">
+              <h4>{{seconda_col[0]}}</h4>
+              
+              <div class="products" v-if="i>=1" v-for="(item,i) in seconda_col">
+                
+                <div class="flex-between">
+
+                  <div class="text ">
+                    <div>{{item.descrizione}}</div>
+                    <div> <i v-for="star in item.stars":class=star></i> </div>
+                    <div> {{item.price}} </div>
+                  </div>
+                  
+                  <div class="img">
+                    <img :src="item.articolo" alt="">
+                  </div>
+
+                </div>
+              
+              </div>
+              
+              
+            </div>
+            
+          
+            <div class="colonna-3">
+              <h4>{{terza_col[0]}}</h4>
+              
+              <div class="testo" v-if="i>=1" v-for="(item,i) in terza_col"><i :class=item.arrow></i> {{item.str}}</div>
+              
+            </div>
+
+            <div class="colonna-4">
+              <h4>{{quarta_col[0]}}</h4>
+              <div class="tag" v-if="i>=1" v-for="(item,i) in quarta_col">
+                <a v-for="el in quarta_col[i]" href="">{{el}}</a>
+              </div>
+            </div>
+          </div>
+          
         </section>
-        <section id="copyright">
+
+
+        <section class="copyright">
+
         </section>
       </footer>
 
