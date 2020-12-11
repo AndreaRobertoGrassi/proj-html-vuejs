@@ -40,7 +40,7 @@ var footer = new Vue({
   el: "#footer",
   data: {
     // sezione avada classic shop
-    prima_col: {
+    prima_col: {   //prima colonna
       logo: "img/logo_footer.png",
       info: [
         "12345 North Main Street,",
@@ -61,7 +61,7 @@ var footer = new Vue({
       ],
     },
 
-    seconda_col: [
+    seconda_col: [   //seconda colonna
       "TOP RATED PRODUCTS",
       {
         descrizione: "Leather Gloves",
@@ -103,7 +103,7 @@ var footer = new Vue({
       },
     ],
 
-    terza_col: [
+    terza_col: [    //terza colonna
       "RECENT POST",
       {
         arrow: "fas fa-angle-right",
@@ -119,7 +119,7 @@ var footer = new Vue({
       { arrow: "fas fa-angle-right", str: "Fusce mattis nunc ut aliquam" },
     ],
 
-    quarta_col: [
+    quarta_col: [    //quarta colonna
       "TAGS",
       ["Black", "boots", "Brown", "Casual"],
       ["D&G", "Fabric", "flowers", "Grey"],

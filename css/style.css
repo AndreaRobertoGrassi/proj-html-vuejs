@@ -54,7 +54,7 @@ p{
   text-align: center;
   margin: 10px 0 30px ;
   color: #525558;
-  font-size: 14px;
+  font-size: 13px;
 }
 .margin-h1{
   margin: 0 20px;
@@ -77,6 +77,9 @@ p{
 #header .social{
   width: 100px;
 }
+#header a{
+  margin:0 5px;
+}
 #header .social a i{
   color: #64686c;
 }
@@ -85,7 +88,7 @@ p{
 }
 #header .account .cart{
   background-color: #ebecec;
-  padding: 16px;
+  padding: 16px 30px;
 }
 /* navigazione */
 #header .navigazione{
@@ -98,9 +101,7 @@ p{
 #header a,.dropdown{
   color:#64686c;
 }
-#header .menu a{
-  margin:0 5px;
-}
+
 #header .navbar .menu:first-child a, #header .navbar .menu:first-child i{
   color: #427ed5;
 }
@@ -160,8 +161,12 @@ main{
 #featured-products .img *{
   margin-bottom: 10px;
 }
+#featured-products .descrizione{
+  font-size: 12px;
+  color:#64686c;
+}
 #featured-products .prezzo{
-  font-size: 18px;
+  font-size: 16px;
   color: #427ed5;
 }
 #featured-products .prezzo span{
@@ -310,7 +315,7 @@ main{
 }
 #blog .data{
   color: #525558;
-  font-size: 13px;
+  font-size: 12px;
   margin-top: 5px;
 }
 /* linea divisoria */
