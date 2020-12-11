@@ -467,6 +467,12 @@ main{
 #footer .colonna-2 .stelle{
   color: #427ed5;
 }
+#footer .colonna-2 .discount{
+  text-decoration: line-through;
+}
+#footer .colonna-2 .prezzo{
+  font-weight: bold;
+}
 /* colonna 3 */
 #footer .colonna-3{
   height: 100%;

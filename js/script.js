@@ -34,15 +34,13 @@ var header= new Vue({      //per l'header
 });
 
 
-
-var footer = new Vue({
-  // per il footer
+var footer = new Vue({  // per il footer
   el: "#footer",
   data: {
     // sezione avada classic shop
     prima_col: {   //prima colonna
-      logo: "img/logo_footer.png",
-      info: [
+      logo: "img/logo_footer.png",  //immagine logo footer
+      info: [    //indirizzo e contatti
         "12345 North Main Street,",
         "New York, NY 55555",
         "Phone: 1.800.555.6789",
@@ -54,10 +52,7 @@ var footer = new Vue({
         { social: "fab fa-facebook-f", link: "https://it-it.facebook.com/" },
         { social: "fab fa-twitter", link: "https://twitter.com/login?lang=it" },
         { social: "fab fa-instagram", link: "https://www.instagram.com/" },
-        {
-          social: "fab fa-youtube",
-          link: "https://www.youtube.com/?hl=it&gl=IT",
-        },
+        { social: "fab fa-youtube", link: "https://www.youtube.com/?hl=it&gl=IT" },
       ],
     },
 
@@ -65,15 +60,15 @@ var footer = new Vue({
       "TOP RATED PRODUCTS",
       {
         descrizione: "Leather Gloves",
-        stars: [
+        stars: [    //icone stelle
+          "fas fa-star", 
           "fas fa-star",
           "fas fa-star",
           "fas fa-star",
           "fas fa-star",
-          "fas fa-star",
-        ],
-        price: "$45",
-        articolo: "img/articoli-5.jpg",
+        ], 
+        price: "$45",    //prezzo articolo
+        articolo: "img/articoli-5.jpg",   //immagine articolo
       },
 
       {
@@ -85,7 +80,8 @@ var footer = new Vue({
           "fas fa-star",
           "fas fa-star",
         ],
-        price: "$45",
+        discount:'$235',   
+        price: "$200",
         articolo: "img/articoli-2.jpg",
       },
 
@@ -98,8 +94,8 @@ var footer = new Vue({
           "fas fa-star",
           "fas fa-star",
         ],
-        price: "$45",
-        articolo: "img/articoli-7.jpg",
+        price: "$47",
+        articolo: "img/articoli-7.jpg"
       },
     ],
 

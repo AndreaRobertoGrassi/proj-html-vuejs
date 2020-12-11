@@ -445,7 +445,7 @@
                   <div class="text ">
                     <div>{{item.descrizione}}</div>
                     <div> <i v-for="star in item.stars" class="stelle" :class='star'></i> </div>
-                    <div> {{item.price}} </div>
+                    <div><strong class="discount">{{item.discount}}</strong> <strong class="prezzo">{{item.price}}</strong> </div>
                   </div>
                   
                   <div class="img">
