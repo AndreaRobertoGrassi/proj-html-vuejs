@@ -353,7 +353,7 @@ main{
   color: #427ed5;
 }
 #articoli .prezzo, #articoli .scontato, #articoli .underline{
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   margin-right: 5px;
 }
@@ -366,7 +366,7 @@ main{
 /* loghi */
 #loghi{
   background-color: #ebecec;
-  height: 300px;
+  height: 250px;
   flex-direction: column;
 }
 #loghi .titolo{
