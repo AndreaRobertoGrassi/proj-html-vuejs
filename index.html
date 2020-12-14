@@ -497,15 +497,14 @@
           <div class="left">
             
             <div class="colonna-2">
-              <h4>{{seconda_col[0]}}</h4>
-              
-              <div class="products" v-if="i>=1" v-for="(item,i) in seconda_col">
+              <h4>{{seconda_col.titolo}}</h4>
+              <div class="products" v-for="item in seconda_col.info">
                 
                 <div class="flex-between">
 
                   <div class="text ">
                     <div>{{item.descrizione}}</div>
-                    <div> <i v-for="star in item.stars" class="stelle" :class='star'></i> </div>
+                    <div> <i v-for="star in 5" class="stelle fas fa-star"></i> </div>
                     <div><strong class="discount">{{item.discount}}</strong> <strong class="prezzo">{{item.price}}</strong> </div>
                   </div>
                   
@@ -517,21 +516,19 @@
               
               </div>
               
-              
             </div>
             
-          
             <div class="colonna-3">
-              <h4>{{terza_col[0]}}</h4>
+              <h4>{{terza_col.titolo}}</h4>
               
-              <div class="testo" v-if="i>=1" v-for="(item,i) in terza_col"><i :class=item.arrow></i> {{item.str}}</div>
+              <div class="testo" v-for="item in terza_col.info"><i class="fas fa-angle-right"></i> {{item}}</div>
               
             </div>
 
             <div class="colonna-4">
-              <h4>{{quarta_col[0]}}</h4>
-              <div class="tag" v-if="i>=1" v-for="(item,i) in quarta_col">
-                <a v-for="el in quarta_col[i]" href="">{{el}}</a>
+              <h4>{{quarta_col.titolo}}</h4>
+              <div class="tag" v-for="item in quarta_col.tags">
+                <a v-for="tag in item" href="">{{tag}}</a>
               </div>
             </div>
           </div>

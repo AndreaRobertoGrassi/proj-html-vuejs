@@ -34,13 +34,16 @@ var header= new Vue({      //per l'header
 });
 
 
-var footer = new Vue({  // per il footer
+var footer = new Vue({
+  // per il footer
   el: "#footer",
   data: {
     // sezione avada classic shop
-    prima_col: {   //prima colonna
-      logo: "img/logo_footer.png",  //immagine logo footer
-      info: [    //indirizzo e contatti
+    prima_col: {
+      //prima colonna
+      logo: "img/logo_footer.png", //immagine logo footer
+      info: [
+        //indirizzo e contatti
         "12345 North Main Street,",
         "New York, NY 55555",
         "Phone: 1.800.555.6789",
@@ -52,79 +55,64 @@ var footer = new Vue({  // per il footer
         { social: "fab fa-facebook-f", link: "https://it-it.facebook.com/" },
         { social: "fab fa-twitter", link: "https://twitter.com/login?lang=it" },
         { social: "fab fa-instagram", link: "https://www.instagram.com/" },
-        { social: "fab fa-youtube", link: "https://www.youtube.com/?hl=it&gl=IT" },
+        {
+          social: "fab fa-youtube",
+          link: "https://www.youtube.com/?hl=it&gl=IT",
+        },
       ],
     },
 
-    seconda_col: [   //seconda colonna
-      "TOP RATED PRODUCTS",
-      {
-        descrizione: "Leather Gloves",
-        stars: [    //icone stelle
-          "fas fa-star", 
-          "fas fa-star",
-          "fas fa-star",
-          "fas fa-star",
-          "fas fa-star",
-        ], 
-        price: "$45",    //prezzo articolo
-        articolo: "img/articoli-5.jpg",   //immagine articolo
-      },
+    seconda_col: {
+      //seconda colonna
+      titolo: "TOP RATED PRODUCTS",
+      info: [
+        {
+          descrizione: "Leather Gloves",
+          price: "$45", //prezzo articolo
+          articolo: "img/articoli-5.jpg", //immagine articolo
+        },
 
-      {
-        descrizione: "Black Leather Jacket",
-        stars: [
-          "fas fa-star",
-          "fas fa-star",
-          "fas fa-star",
-          "fas fa-star",
-          "fas fa-star",
-        ],
-        discount:'$235',   
-        price: "$200",
-        articolo: "img/articoli-2.jpg",
-      },
+        {
+          descrizione: "Black Leather Jacket",
+          discount: "$235",
+          price: "$200",
+          articolo: "img/articoli-2.jpg",
+        },
 
-      {
-        descrizione: "Spring Printed Dress",
-        stars: [
-          "fas fa-star",
-          "fas fa-star",
-          "fas fa-star",
-          "fas fa-star",
-          "fas fa-star",
-        ],
-        price: "$47",
-        articolo: "img/articoli-7.jpg"
-      },
-    ],
+        {
+          descrizione: "Spring Printed Dress",
+          price: "$47",
+          articolo: "img/articoli-7.jpg",
+        },
+      ],
+    },
 
-    terza_col: [    //terza colonna
-      "RECENT POST",
-      {
-        arrow: "fas fa-angle-right",
-        str: "Anean lobortis sapien enim viverra",
-      },
-      { arrow: "fas fa-angle-right", str: "Duis ac massa semper maximus" },
-      {
-        arrow: "fas fa-angle-right",
-        str: "Nunc fermint nulla eu justo sem id",
-      },
-      { arrow: "fas fa-angle-right", str: "Aliquam posuere magna eget nibh" },
-      { arrow: "fas fa-angle-right", str: "Cras ac nulla ac consecte rutrum" },
-      { arrow: "fas fa-angle-right", str: "Fusce mattis nunc ut aliquam" },
-    ],
+    terza_col: {
+      //terza colonna
+      titolo: "RECENT POST",
+      info: [
+        "Anean lobortis sapien enim viverra",
+        "Duis ac massa semper maximus",
+        "Nunc fermint nulla eu justo sem id",
+        "Aliquam posuere magna eget nibh",
+        "Cras ac nulla ac consecte rutrum",
+        "Fusce mattis nunc ut aliquam",
+      ],
+    },
 
-    quarta_col: [    //quarta colonna
-      "TAGS",
-      ["Black", "boots", "Brown", "Casual"],
-      ["D&G", "Fabric", "flowers", "Grey"],
-      ["hat", "Hipster", "lines"],
-      ["multi-purpose", "New York"],
-      ["Outdors", "red", "responsive"],
-      ["summer", "sweater", "Travel"],
-      ["Warm", "White", "winter"],
-    ],
+    quarta_col: {
+      //quarta colonna
+      titolo: "TAGS",
+      tags:[
+        ["Black", "boots", "Brown", "Casual"],
+        ["D&G", "Fabric", "flowers", "Grey"],
+        ["hat", "Hipster", "lines"],
+        ["multi-purpose", "New York"],
+        ["Outdors", "red", "responsive"],
+        ["summer", "sweater", "Travel"],
+        ["Warm", "White", "winter"],
+      ]
+    },
 
     // sezione copyright
     copy: [
@@ -134,6 +122,6 @@ var footer = new Vue({  // per il footer
       " Powered by Wordrepss",
     ],
     pagamenti: "img/pagamenti.png",
-  }
+  },
 });
  
